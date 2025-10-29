@@ -7,6 +7,19 @@ import Link from "next/link"
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const targetId = href.replace("#", "")
+    const element = document.getElementById(targetId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+      setIsOpen(false) // Close mobile menu after clicking
+    }
+  }
+
   const navItems = [
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
@@ -28,7 +41,8 @@ export default function Navigation() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                onClick={(e) => handleScroll(e, item.href)}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
               >
                 {item.label}
               </a>
@@ -48,8 +62,8 @@ export default function Navigation() {
               <a
                 key={item.label}
                 href={item.href}
-                className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-                onClick={() => setIsOpen(false)}
+                className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                onClick={(e) => handleScroll(e, item.href)}
               >
                 {item.label}
               </a>

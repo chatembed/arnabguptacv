@@ -8,7 +8,7 @@ const _raleway = Raleway({ subsets: ["latin"], variable: "--font-heading" })
 const _nunito = Nunito({ subsets: ["latin"], variable: "--font-body" })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://your-domain.com'),
+  metadataBase: new URL('https://arnabgupta.me'),
   title: {
     default: "Full Stack Gen AI Developer | MERN, Python, LangChain & AWS",
     template: '%s | Full Stack Gen AI Developer'
@@ -17,6 +17,15 @@ export const metadata: Metadata = {
   keywords: ['Full Stack Developer', 'AI Developer', 'MERN Stack', 'Python', 'LangChain', 'AWS', 'Machine Learning', 'Web Development', 'Portfolio'],
   authors: [{ name: 'Arnab Gupta' }],
   creator: 'Arnab Gupta',
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.ico', sizes: 'any' }
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

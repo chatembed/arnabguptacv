@@ -1,25 +1,19 @@
 "use client"
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© {currentYear} Full Stack Gen AI Developer. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground transition-colors">
-              Privacy
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Terms
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Sitemap
-            </a>
-          </div>
-        </div>
+    <footer className="py-6 text-center text-sm text-muted-foreground">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-3">
+        <div>© {year} Arnab Gupta.</div>
+        <a
+          href="/sitemap.xml"
+          className="hover:text-foreground transition-colors text-sm"
+          aria-label="Sitemap"
+        >
+          Sitemap
+        </a>
       </div>
     </footer>
   )

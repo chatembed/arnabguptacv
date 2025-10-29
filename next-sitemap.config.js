@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://your-domain.com',
+  siteUrl: 'https://arnabgupta.me',
   generateRobotsTxt: false, // We already created a custom robots.txt
   changefreq: 'weekly',
   priority: 0.7,

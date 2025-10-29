@@ -28,8 +28,8 @@ export default function Hero() {
           {/* Text content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance">
-                Full Stack <span className="text-primary block">Gen AI</span> Developer
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold whitespace-nowrap flex items-center gap-2">
+                Full Stack <span className="text-primary">Gen AI</span> Developer
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground text-balance">
                 Building intelligent applications with MERN, Python, LangChain & AWS
@@ -44,14 +44,22 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-8">
               <a
                 href="#projects"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity font-medium"
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }}
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity font-medium cursor-pointer"
               >
                 View My Work
                 <ArrowRight size={20} />
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium"
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }}
+                className="inline-flex items-center justify-center px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium cursor-pointer"
               >
                 Get In Touch
               </a>

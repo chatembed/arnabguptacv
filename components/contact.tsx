@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, Linkedin, Github } from "lucide-react"
+import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 export default function Contact() {
   return (
@@ -15,45 +15,41 @@ export default function Contact() {
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
-            href="mailto:your.email@example.com"
-            className="inline-flex items-center justify-center gap-3 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity font-medium"
-          >
-            <Mail size={20} />
-            Send Email
-          </a>
-          <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/arnabg95"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium"
           >
-            <Linkedin size={20} />
+            <FaLinkedin size={20} />
             LinkedIn
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/r3Vibe"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium"
           >
-            <Github size={20} />
+            <FaGithub size={20} />
             GitHub
           </a>
-        </div>
-
-        <div className="bg-card border border-border rounded-lg p-8 space-y-4">
-          <h3 className="font-semibold text-lg">Quick Links</h3>
-          <div className="grid md:grid-cols-3 gap-4 text-sm">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              📝 Read My Blog
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              📄 Download Resume
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              💼 View LinkedIn
-            </a>
-          </div>
+          <a
+            href="https://blog.chatembedai.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium"
+          >
+            📝
+            <span>Read My Blog</span>
+          </a>
+          <a
+            href="/Arnab-Gupta-CV.pdf"
+            download
+            className="inline-flex items-center justify-center gap-3 px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium"
+            aria-label="Download Resume (PDF)"
+          >
+            📄
+            <span>Download Resume</span>
+          </a>
         </div>
       </div>
     </section>

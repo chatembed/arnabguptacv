@@ -8,6 +8,8 @@ const nextConfig = {
   },
   output: 'export',
   trailingSlash: true,
+  basePath: '',
+  domains: ['arnabgupta.me']
 }
 
 export default nextConfig

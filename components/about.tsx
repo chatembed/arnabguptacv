@@ -18,7 +18,7 @@ export default function About() {
                 engineering, where I leverage LangChain, LangGraph, and AWS Bedrock to create cutting-edge AI solutions.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new AI frameworks, contributing to open-source projects,
+                When I'm not coding, you'll find me exploring new AI frameworks,
                 or sharing knowledge through my blog and technical writing.
               </p>
             </div>

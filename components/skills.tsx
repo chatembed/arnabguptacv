@@ -1,24 +1,75 @@
-"use client"
+"use client";
 
 export default function Skills() {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "SWR"],
+      skills: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Redux/Zustand",
+        "SWR",
+      ],
     },
     {
       title: "Backend",
-      skills: ["Node.js", "Express", "Python", "FastAPI", "Django", "PostgreSQL"],
+      skills: ["Node.js", "Express", "Python", "FastAPI", "Django", "Flask"],
     },
     {
-      title: "AI & ML",
-      skills: ["LangChain", "LangGraph", "AWS Bedrock", "OpenAI API", "Prompt Engineering", "RAG"],
+      title: "Generative AI",
+      skills: [
+        "LangChain",
+        "LangGraph",
+        "AWS Bedrock",
+        "Prompt Engineering",
+        "RAG",
+        "Guardrails",
+      ],
+    },
+    {
+      title: "Database",
+      skills: [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Pinecone",
+        "ChromaDB",
+      ],
     },
     {
       title: "Cloud & DevOps",
       skills: ["AWS EC2", "AWS Lambda", "AWS S3", "Docker", "Git", "CI/CD"],
     },
-  ]
+    {
+      title: "AI & Machine Learning",
+      skills: [
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn",
+        "Keras",
+        "OpenAI",
+        "Hugging Face",
+      ],
+    },
+    {
+      title: "Tools & Platforms",
+      skills: ["GitHub", "Jira", "Postman", "VS Code", "Basecamp", "Figma"],
+    },
+    {
+      title: "Other Skills",
+      skills: [
+        "Agile Methodologies",
+        "Test-Driven Development",
+        "RESTful APIs",
+        "Socket.io",
+        "System Design",
+        "Cloud Architecture",
+      ],
+    }
+  ];
 
   return (
     <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -31,10 +82,15 @@ export default function Skills() {
               key={category.title}
               className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors"
             >
-              <h3 className="font-semibold text-lg mb-4 text-primary">{category.title}</h3>
+              <h3 className="font-semibold text-lg mb-4 text-primary">
+                {category.title}
+              </h3>
               <ul className="space-y-2">
                 {category.skills.map((skill) => (
-                  <li key={skill} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <li
+                    key={skill}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
                     • {skill}
                   </li>
                 ))}
@@ -44,5 +100,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }
