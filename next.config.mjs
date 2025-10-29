@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
+const repo = '/arnabguptacv';
+
 const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
   images: {
     unoptimized: true,
-    // Use `remotePatterns` instead of `domains` (domains is deprecated).
-    // This protects against malicious remote image hosts.
     remotePatterns: [
       {
         protocol: 'https',
@@ -18,8 +18,8 @@ const nextConfig = {
   },
   output: 'export',
   trailingSlash: true,
-  basePath: '',
-  // NOTE: `domains` moved into `images.domains` above to fix Next.js config warning
-}
+  basePath: repo,
+  assetPrefix: repo,
+};
 
-export default nextConfig
+export default nextConfig;

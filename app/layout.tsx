@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://your-domain.com',
+    url: 'https://arnabgupta.me',
     title: 'Full Stack Gen AI Developer | MERN, Python, LangChain & AWS',
     description: 'Full Stack AI Developer specializing in MERN stack, Python, LangChain, and AWS. Building intelligent applications and end-to-end AI solutions.',
     siteName: 'Arnab Gupta - Portfolio',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Your Name - Full Stack Gen AI Developer'
+        alt: 'Arnab Gupta - Full Stack Gen AI Developer'
       }
     ]
   },

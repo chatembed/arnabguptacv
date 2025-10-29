@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://arnabgupta.me/sitemap.xml
 
 # Block specific directories if needed
 # Disallow: /private/

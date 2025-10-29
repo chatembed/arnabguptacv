@@ -16,24 +16,6 @@ module.exports = {
         priority: 1.0,
         lastmod: new Date().toISOString(),
       },
-      {
-        loc: '/projects',
-        changefreq: 'weekly',
-        priority: 0.8,
-        lastmod: new Date().toISOString(),
-      },
-      {
-        loc: '/about',
-        changefreq: 'monthly',
-        priority: 0.8,
-        lastmod: new Date().toISOString(),
-      },
-      {
-        loc: '/contact',
-        changefreq: 'monthly',
-        priority: 0.8,
-        lastmod: new Date().toISOString(),
-      },
     ]
   },
 }
