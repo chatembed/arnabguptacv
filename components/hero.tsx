@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -29,24 +29,29 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold whitespace-nowrap flex items-center gap-2">
-                Full Stack <span className="text-primary">Gen AI</span> Developer
+                Full Stack <span className="text-primary">Gen AI</span> Lovely
+                Developer
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground text-balance">
-                Building intelligent applications with MERN, Python, LangChain & AWS
+                Building intelligent applications with MERN, Python, LangChain &
+                AWS
               </p>
             </div>
 
             <p className="text-lg text-muted-foreground max-w-2xl text-balance">
-              I craft end-to-end AI solutions, from frontend interfaces to sophisticated backend systems powered by LLMs
-              and modern cloud infrastructure.
+              I craft end-to-end AI solutions, from frontend interfaces to
+              sophisticated backend systems powered by LLMs and modern cloud
+              infrastructure.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-8">
               <a
                 href="#projects"
                 onClick={(e) => {
-                  e.preventDefault()
-                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                  e.preventDefault();
+                  document
+                    .getElementById("projects")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity font-medium cursor-pointer"
               >
@@ -56,8 +61,10 @@ export default function Hero() {
               <a
                 href="#contact"
                 onClick={(e) => {
-                  e.preventDefault()
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                  e.preventDefault();
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
                 className="inline-flex items-center justify-center px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium cursor-pointer"
               >
@@ -68,5 +75,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
