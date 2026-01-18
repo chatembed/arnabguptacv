@@ -31,15 +31,14 @@ export default function About() {
                 </span>
               </div>
               <p className="text-foreground leading-relaxed">
-                I don't just build apps—I build the <em>intelligence</em> inside
-                them. My obsession? Taking the chaos of LLMs, vector databases,
-                and cloud infrastructure and turning it into products that feel
-                effortless to use.
+                I got hooked on AI when I realized it wasn't just about models—it's
+                about making them <em>useful</em>. That meant learning everything:
+                the infrastructure, the APIs, the interfaces, the deployment pipelines.
               </p>
             </div>
             <p className="text-muted-foreground text-sm mt-4">
-              From React frontends to Python backends to AWS deployments—I own
-              the full stack.
+              3+ years of shipping products taught me one thing: great AI is invisible.
+              Users don't care about your architecture—they care if it works.
             </p>
           </div>
 
@@ -52,7 +51,7 @@ export default function About() {
               </span>
             </div>
             <p className="text-sm text-foreground font-medium">
-              Building AI agents with LangGraph & multi-modal RAG systems
+              Building FastAPI Scaffold cli tool to help generate production-ready FastAPI boilerplate code.
             </p>
           </div>
 
@@ -65,20 +64,20 @@ export default function About() {
               </span>
             </div>
             <p className="text-sm text-foreground font-medium italic">
-              "Ship fast. Iterate faster. Let users guide the roadmap."
+              "Build for the future. Build Scalable Systems."
             </p>
           </div>
 
           {/* Stats Row */}
           <div className="col-span-1 bg-card border border-border rounded-2xl p-5 flex flex-col justify-center items-center text-center hover:border-primary/30 transition-colors">
-            <span className="text-3xl font-bold text-primary">5+</span>
+            <span className="text-3xl font-bold text-primary">3.5+</span>
             <span className="text-xs text-muted-foreground mt-1">
               Years Coding
             </span>
           </div>
 
           <div className="col-span-1 bg-card border border-border rounded-2xl p-5 flex flex-col justify-center items-center text-center hover:border-primary/30 transition-colors">
-            <span className="text-3xl font-bold text-primary">20+</span>
+            <span className="text-3xl font-bold text-primary">7+</span>
             <span className="text-xs text-muted-foreground mt-1">
               Projects Shipped
             </span>
@@ -101,7 +100,7 @@ export default function About() {
                   </span>
                 </div>
                 <p className="text-sm font-medium">
-                  React, Next.js, TypeScript, Tailwind
+                  React, Next.js, TypeScript
                 </p>
               </div>
               <div>
@@ -109,7 +108,7 @@ export default function About() {
                   <div className="w-2 h-2 rounded-full bg-green-500"></div>
                   <span className="text-xs text-muted-foreground">Backend</span>
                 </div>
-                <p className="text-sm font-medium">Python, FastAPI, Node.js</p>
+                <p className="text-sm font-medium">Python, FastAPI, Django</p>
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-2">
@@ -117,7 +116,7 @@ export default function About() {
                   <span className="text-xs text-muted-foreground">AI/ML</span>
                 </div>
                 <p className="text-sm font-medium">
-                  LangChain, LangGraph, Bedrock
+                  LangChain, LangGraph, Bedrock, Pipecat
                 </p>
               </div>
               <div>
@@ -125,7 +124,7 @@ export default function About() {
                   <div className="w-2 h-2 rounded-full bg-orange-500"></div>
                   <span className="text-xs text-muted-foreground">Cloud</span>
                 </div>
-                <p className="text-sm font-medium">AWS, Docker, Vercel</p>
+                <p className="text-sm font-medium">AWS, GCP</p>
               </div>
             </div>
           </div>
@@ -139,7 +138,7 @@ export default function About() {
               </span>
             </div>
             <p className="text-sm text-foreground">
-              I debug best after midnight with mass amounts of coffee ☕
+              I talk to LLMs more than I talk to people some days 🤖
             </p>
           </div>
 

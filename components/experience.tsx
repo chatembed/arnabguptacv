@@ -1,36 +1,44 @@
 "use client";
 
-import { Briefcase, Calendar, MapPin, ArrowRight } from "lucide-react";
+import { Briefcase, Calendar } from "lucide-react";
 
 const jobs = [
   {
     company: "Rezolve AI",
-    role: "Full Stack Gen AI Developer", // Update this with your actual role
+    role: "Full Stack Developer",
     startDate: "December 2025",
     endDate: "Present",
     duration: "Current",
     isCurrent: true,
     description:
-      "Building next-generation AI solutions.", // Update with your actual work
+      "Building next-generation Gen AI solutions.",
     highlights: [
-      "AI/ML Development",
+      "Gen AI Development",
       "Full Stack",
-      // Add more highlights
+      "Python",
+      "FastAPI",
+      "Django",
+      "LangChain",
+      "Pipecat",
     ],
   },
   {
     company: "Weavers Web Solution Pvt Ltd",
-    role: "Software Developer", // Update this with your actual role
+    role: "Software Developer",
     startDate: "June 2022",
     endDate: "November 2025",
     duration: "3.5 years",
     isCurrent: false,
     description:
-      "Developed and maintained web applications and backend systems.", // Update with your actual work
+      "Developed and maintained web applications and backend systems.",
     highlights: [
       "Web Development",
       "Backend Systems",
-      // Add more highlights
+      "Python",
+      "FastAPI",
+      "Django",
+      "LangChain",
+      "Pipecat",
     ],
   },
 ];
@@ -48,11 +56,10 @@ export default function Experience() {
           {jobs.map((job, index) => (
             <div
               key={index}
-              className={`relative rounded-2xl p-6 flex flex-col justify-between transition-colors ${
-                job.isCurrent
-                  ? "bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border-2 border-primary/30 hover:border-primary/50"
-                  : "bg-background border border-border hover:border-primary/30"
-              }`}
+              className={`relative rounded-2xl p-6 flex flex-col justify-between transition-colors ${job.isCurrent
+                ? "bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border-2 border-primary/30 hover:border-primary/50"
+                : "bg-background border border-border hover:border-primary/30"
+                }`}
             >
               {/* Current badge */}
               {job.isCurrent && (
@@ -74,11 +81,10 @@ export default function Experience() {
                   </div>
                   <div className="shrink-0">
                     <div
-                      className={`w-12 h-12 rounded-xl flex items-center justify-center ${
-                        job.isCurrent
-                          ? "bg-primary/20 text-primary"
-                          : "bg-muted text-muted-foreground"
-                      }`}
+                      className={`w-12 h-12 rounded-xl flex items-center justify-center ${job.isCurrent
+                        ? "bg-primary/20 text-primary"
+                        : "bg-muted text-muted-foreground"
+                        }`}
                     >
                       <Briefcase size={24} />
                     </div>
@@ -108,11 +114,10 @@ export default function Experience() {
                   {job.highlights.map((highlight, i) => (
                     <span
                       key={i}
-                      className={`text-xs px-3 py-1 rounded-full ${
-                        job.isCurrent
-                          ? "bg-primary/10 text-primary"
-                          : "bg-muted text-muted-foreground"
-                      }`}
+                      className={`text-xs px-3 py-1 rounded-full ${job.isCurrent
+                        ? "bg-primary/10 text-primary"
+                        : "bg-muted text-muted-foreground"
+                        }`}
                     >
                       {highlight}
                     </span>
@@ -121,15 +126,6 @@ export default function Experience() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Timeline connector - visual element */}
-        <div className="hidden md:flex justify-center mt-8">
-          <div className="flex items-center gap-3 text-muted-foreground text-sm">
-            <div className="w-3 h-3 rounded-full bg-primary"></div>
-            <ArrowRight size={16} />
-            <span>Building the future with AI</span>
-          </div>
         </div>
       </div>
     </section>

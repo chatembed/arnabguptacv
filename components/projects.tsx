@@ -8,7 +8,7 @@ export default function Projects() {
       title: "Builders Hut",
       description:
         "Builders Hut is a powerful command-line tool that scaffolds production-ready FastAPI projects in seconds. Stop wasting time on boilerplate—start building features immediately with a clean, scalable project structure.",
-      tech: ["React", "Node.js", "LangChain", "OpenAI", "PostgreSQL", "Socket.io"],
+      tech: ["Python", "Typer"],
       link: "https://github.com/Agsdovah95/builders-hut/blob/main/README.md",
       github: "https://github.com/Agsdovah95/builders-hut",
     },
