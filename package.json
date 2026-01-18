@@ -5,7 +5,8 @@
   "scripts": {
     "build": "next build --webpack",
     "export": "next export",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out",
+    "serve": "npm run build && npx serve@latest out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

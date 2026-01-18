@@ -5,70 +5,50 @@ export default function Skills() {
     {
       title: "Frontend",
       skills: [
+        "JavaScript",
+        "TypeScript",
         "React",
         "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Redux/Zustand",
-        "SWR",
       ],
     },
     {
       title: "Backend",
-      skills: ["Node.js", "Express", "Python", "FastAPI", "Django", "Flask"],
+      skills: ["Python", "FastAPI", "Django", "DRF/Ninja"],
     },
     {
       title: "Generative AI",
       skills: [
         "LangChain",
         "LangGraph",
-        "AWS Bedrock",
-        "Prompt Engineering",
-        "RAG",
-        "Guardrails",
+        "Pipecat",
+        "Bedrock",
       ],
     },
     {
       title: "Database",
       skills: [
         "PostgreSQL",
-        "MySQL",
         "MongoDB",
         "Redis",
         "Pinecone",
-        "ChromaDB",
       ],
     },
     {
       title: "Cloud & DevOps",
-      skills: ["AWS EC2", "AWS Lambda", "AWS S3", "Docker", "Git", "CI/CD"],
-    },
-    {
-      title: "AI & Machine Learning",
-      skills: [
-        "TensorFlow",
-        "PyTorch",
-        "scikit-learn",
-        "Keras",
-        "OpenAI",
-        "Hugging Face",
-      ],
+      skills: ["AWS", "GCP", "Docker", "Git"],
     },
     {
       title: "Tools & Platforms",
-      skills: ["GitHub", "Jira", "Postman", "VS Code", "Basecamp", "Figma"],
+      skills: ["GitHub", "Jira", "Postman", "VS Code"],
     },
     {
-      title: "Other Skills",
-      skills: [
-        "Agile Methodologies",
-        "Test-Driven Development",
-        "RESTful APIs",
-        "Socket.io",
-        "System Design",
-        "Cloud Architecture",
-      ],
-    }
+      title: "AI/ML",
+      skills: ["OpenAI", "Anthropic", "Hugging Face", "Ollama"],
+    },
+    {
+      title: "APIs & Protocols",
+      skills: ["REST", "WebSockets"],
+    },
   ];
 
   return (

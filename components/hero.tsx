@@ -33,15 +33,14 @@ export default function Hero() {
                 Developer
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground text-balance">
-                Building intelligent applications with MERN, Python, LangChain &
-                AWS
+                Building intelligent applications with <span className="text-primary">Python</span>
               </p>
             </div>
 
             <p className="text-lg text-muted-foreground max-w-2xl text-balance">
-              I craft end-to-end AI solutions, from frontend interfaces to
-              sophisticated backend systems powered by LLMs and modern cloud
-              infrastructure.
+              I don't just use <span className="text-primary">AI—I</span> build the full stack that makes it useful.
+              From LLM orchestration to seamless user experiences, I turn ambitious
+              ideas into products people actually want to use.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-8">

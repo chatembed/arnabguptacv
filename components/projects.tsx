@@ -5,54 +5,19 @@ import { ExternalLink, Github } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
-      title: "AI-Powered Chat Application",
+      title: "Builders Hut",
       description:
-        "Full-stack chat application with real-time messaging and AI-powered responses using LangChain and OpenAI.",
+        "Builders Hut is a powerful command-line tool that scaffolds production-ready FastAPI projects in seconds. Stop wasting time on boilerplate—start building features immediately with a clean, scalable project structure.",
       tech: ["React", "Node.js", "LangChain", "OpenAI", "PostgreSQL", "Socket.io"],
-      link: "#",
-      github: "#",
-    },
-    {
-      title: "Document Intelligence Platform",
-      description: "Enterprise solution for document processing and analysis using AWS Bedrock and RAG techniques.",
-      tech: ["Next.js", "Python", "FastAPI", "AWS Bedrock", "LangGraph", "Pinecone"],
-      link: "#",
-      github: "#",
-    },
-    {
-      title: "Multi-Agent Workflow System",
-      description: "Sophisticated multi-agent system using LangGraph for complex task orchestration and automation.",
-      tech: ["Python", "LangGraph", "FastAPI", "Redis", "PostgreSQL", "Docker"],
-      link: "#",
-      github: "#",
-    },
-    {
-      title: "Real-time Analytics Dashboard",
-      description: "Interactive dashboard for real-time data visualization and insights with AI-powered predictions.",
-      tech: ["React", "TypeScript", "D3.js", "Node.js", "AWS EC2", "WebSocket"],
-      link: "#",
-      github: "#",
-    },
-    {
-      title: "Intelligent Content Generator",
-      description: "SaaS platform for AI-powered content generation with fine-tuned models and custom workflows.",
-      tech: ["Next.js", "Django", "LangChain", "OpenAI", "Stripe", "AWS Lambda"],
-      link: "#",
-      github: "#",
-    },
-    {
-      title: "Knowledge Base Search Engine",
-      description: "Semantic search engine with vector embeddings and advanced filtering capabilities.",
-      tech: ["React", "FastAPI", "LangChain", "Pinecone", "AWS S3", "TypeScript"],
-      link: "#",
-      github: "#",
+      link: "https://github.com/Agsdovah95/builders-hut/blob/main/README.md",
+      github: "https://github.com/Agsdovah95/builders-hut",
     },
   ]
 
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12">Featured Projects</h2>
+        <h2 className="text-4xl font-bold mb-12">My Projects</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
@@ -75,12 +40,14 @@ export default function Projects() {
                 <a
                   href={project.link}
                   className="inline-flex items-center gap-1 text-sm text-primary hover:gap-2 transition-all"
+                  target="_blank"
                 >
                   View <ExternalLink size={16} />
                 </a>
                 <a
                   href={project.github}
                   className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  target="_blank"
                 >
                   <Github size={16} />
                 </a>

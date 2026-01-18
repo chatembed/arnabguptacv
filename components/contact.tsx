@@ -24,7 +24,7 @@ export default function Contact() {
             LinkedIn
           </a>
           <a
-            href="https://github.com/r3Vibe"
+            href="https://github.com/Agsdovah95"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium"
@@ -33,7 +33,7 @@ export default function Contact() {
             GitHub
           </a>
           <a
-            href="https://blog.chatembedai.com"
+            href="https://medium.com/@arnabg95"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-8 py-3 border border-border rounded-lg hover:bg-muted transition-colors font-medium"

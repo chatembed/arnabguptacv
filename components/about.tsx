@@ -1,58 +1,162 @@
-"use client"
+"use client";
+
+import {
+  Sparkles,
+  Code2,
+  Brain,
+  Cloud,
+  Coffee,
+  Rocket,
+  Zap,
+  BookOpen,
+} from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
-      <div className="max-w-4xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h2 className="text-4xl font-bold">About Me</h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                I'm a passionate full-stack developer specializing in generative AI applications. With expertise across
-                the entire technology stack, I build scalable, intelligent systems that solve real-world problems.
+    <section id="about" className="py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold mb-12 text-center">
+          About <span className="text-primary">Me</span>
+        </h2>
+
+        {/* Bento Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[140px]">
+          {/* Main Story - Large Card */}
+          <div className="col-span-2 row-span-2 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/20 rounded-2xl p-6 flex flex-col justify-between group hover:border-primary/40 transition-colors">
+            <div>
+              <div className="flex items-center gap-2 text-primary mb-3">
+                <Sparkles size={20} />
+                <span className="text-sm font-medium uppercase tracking-wide">
+                  The Story
+                </span>
+              </div>
+              <p className="text-foreground leading-relaxed">
+                I don't just build apps—I build the <em>intelligence</em> inside
+                them. My obsession? Taking the chaos of LLMs, vector databases,
+                and cloud infrastructure and turning it into products that feel
+                effortless to use.
               </p>
-              <p>
-                My journey spans from crafting responsive user interfaces with React to architecting robust backend
-                systems with Python and Node.js. I'm particularly fascinated by the intersection of AI and software
-                engineering, where I leverage LangChain, LangGraph, and AWS Bedrock to create cutting-edge AI solutions.
-              </p>
-              <p>
-                When I'm not coding, you'll find me exploring new AI frameworks,
-                or sharing knowledge through my blog and technical writing.
-              </p>
+            </div>
+            <p className="text-muted-foreground text-sm mt-4">
+              From React frontends to Python backends to AWS deployments—I own
+              the full stack.
+            </p>
+          </div>
+
+          {/* Currently Building */}
+          <div className="col-span-2 md:col-span-1 row-span-1 bg-card border border-border rounded-2xl p-5 flex flex-col justify-between hover:border-primary/30 transition-colors group">
+            <div className="flex items-center gap-2 text-amber-500 mb-2">
+              <Rocket size={18} />
+              <span className="text-xs font-medium uppercase tracking-wide">
+                Currently
+              </span>
+            </div>
+            <p className="text-sm text-foreground font-medium">
+              Building AI agents with LangGraph & multi-modal RAG systems
+            </p>
+          </div>
+
+          {/* Philosophy */}
+          <div className="col-span-2 md:col-span-1 row-span-1 bg-gradient-to-br from-accent/20 to-transparent border border-accent/20 rounded-2xl p-5 flex flex-col justify-between hover:border-accent/40 transition-colors">
+            <div className="flex items-center gap-2 text-accent mb-2">
+              <Zap size={18} />
+              <span className="text-xs font-medium uppercase tracking-wide">
+                Philosophy
+              </span>
+            </div>
+            <p className="text-sm text-foreground font-medium italic">
+              "Ship fast. Iterate faster. Let users guide the roadmap."
+            </p>
+          </div>
+
+          {/* Stats Row */}
+          <div className="col-span-1 bg-card border border-border rounded-2xl p-5 flex flex-col justify-center items-center text-center hover:border-primary/30 transition-colors">
+            <span className="text-3xl font-bold text-primary">5+</span>
+            <span className="text-xs text-muted-foreground mt-1">
+              Years Coding
+            </span>
+          </div>
+
+          <div className="col-span-1 bg-card border border-border rounded-2xl p-5 flex flex-col justify-center items-center text-center hover:border-primary/30 transition-colors">
+            <span className="text-3xl font-bold text-primary">20+</span>
+            <span className="text-xs text-muted-foreground mt-1">
+              Projects Shipped
+            </span>
+          </div>
+
+          {/* Tech Stack Card */}
+          <div className="col-span-2 row-span-2 bg-card border border-border rounded-2xl p-6 hover:border-primary/30 transition-colors">
+            <div className="flex items-center gap-2 text-muted-foreground mb-4">
+              <Code2 size={18} />
+              <span className="text-xs font-medium uppercase tracking-wide">
+                Tech Stack
+              </span>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                  <span className="text-xs text-muted-foreground">
+                    Frontend
+                  </span>
+                </div>
+                <p className="text-sm font-medium">
+                  React, Next.js, TypeScript, Tailwind
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                  <span className="text-xs text-muted-foreground">Backend</span>
+                </div>
+                <p className="text-sm font-medium">Python, FastAPI, Node.js</p>
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-2 h-2 rounded-full bg-purple-500"></div>
+                  <span className="text-xs text-muted-foreground">AI/ML</span>
+                </div>
+                <p className="text-sm font-medium">
+                  LangChain, LangGraph, Bedrock
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-2 h-2 rounded-full bg-orange-500"></div>
+                  <span className="text-xs text-muted-foreground">Cloud</span>
+                </div>
+                <p className="text-sm font-medium">AWS, Docker, Vercel</p>
+              </div>
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="bg-white rounded-lg p-6 border border-border shadow-sm">
-              <h3 className="font-semibold mb-4">Quick Facts</h3>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li className="flex justify-between">
-                  <span>Specialization:</span>
-                  <span className="text-foreground font-medium">Gen AI & Full Stack</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Frontend:</span>
-                  <span className="text-foreground font-medium">React, Next.js, TypeScript</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Backend:</span>
-                  <span className="text-foreground font-medium">Node.js, Python, FastAPI</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>AI/ML:</span>
-                  <span className="text-foreground font-medium">LangChain, LangGraph, Bedrock</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Cloud:</span>
-                  <span className="text-foreground font-medium">AWS (EC2, Lambda, S3)</span>
-                </li>
-              </ul>
+          {/* Fun Fact */}
+          <div className="col-span-2 md:col-span-1 bg-gradient-to-br from-rose-500/10 to-transparent border border-rose-500/20 rounded-2xl p-5 flex flex-col justify-between hover:border-rose-500/40 transition-colors">
+            <div className="flex items-center gap-2 text-rose-500 mb-2">
+              <Coffee size={18} />
+              <span className="text-xs font-medium uppercase tracking-wide">
+                Fun Fact
+              </span>
             </div>
+            <p className="text-sm text-foreground">
+              I debug best after midnight with mass amounts of coffee ☕
+            </p>
+          </div>
+
+          {/* Learning */}
+          <div className="col-span-2 md:col-span-1 bg-card border border-border rounded-2xl p-5 flex flex-col justify-between hover:border-primary/30 transition-colors">
+            <div className="flex items-center gap-2 text-emerald-500 mb-2">
+              <BookOpen size={18} />
+              <span className="text-xs font-medium uppercase tracking-wide">
+                Learning
+              </span>
+            </div>
+            <p className="text-sm text-foreground">
+              Diving deep into AI agents, tool-use patterns & autonomous systems
+            </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
