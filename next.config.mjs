@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  compress: true,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -8,14 +9,14 @@ const nextConfig = {
     unoptimized: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'arnabgupta.me',
-        port: '',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "arnabgupta.me",
+        port: "",
+        pathname: "/**",
       },
     ],
   },
-  output: 'export',
+  output: "export",
   trailingSlash: true,
 };
 
