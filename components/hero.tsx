@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold whitespace-nowrap flex items-center gap-2">
-                Full Stack <span className="text-primary">Gen AI</span>{" "}
+                Full Stack <span className="text-primary">Gen AII</span>{" "}
                 Developer
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground text-balance">
