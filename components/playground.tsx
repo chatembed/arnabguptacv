@@ -40,10 +40,6 @@ export default function Playground() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isTyping) return;
@@ -62,24 +58,27 @@ export default function Playground() {
     // TODO: Replace this with actual LangChain.js integration
     // The visitorId can be sent to the backend for session management
     // Example: await sendMessage(input, visitorId);
-    
+
     // Simulate AI response delay
-    setTimeout(() => {
-      const assistantMessage: Message = {
-        id: `assistant-${Date.now()}`,
-        role: "assistant",
-        content: getPlaceholderResponse(userMessage.content),
-        timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, assistantMessage]);
-      setIsTyping(false);
-    }, 1000 + Math.random() * 1000);
+    setTimeout(
+      () => {
+        const assistantMessage: Message = {
+          id: `assistant-${Date.now()}`,
+          role: "assistant",
+          content: getPlaceholderResponse(userMessage.content),
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, assistantMessage]);
+        setIsTyping(false);
+      },
+      1000 + Math.random() * 1000,
+    );
   };
 
   // Placeholder responses until LangChain is connected
   const getPlaceholderResponse = (query: string): string => {
     const lowerQuery = query.toLowerCase();
-    
+
     if (lowerQuery.includes("skill") || lowerQuery.includes("tech")) {
       return "Arnab is skilled in Python, FastAPI, Django, React, Next.js, TypeScript, and has expertise in AI/ML with LangChain, LangGraph, AWS Bedrock, and Pipecat. He's a true full-stack Gen AI developer! 🚀";
     }
@@ -89,13 +88,21 @@ export default function Playground() {
     if (lowerQuery.includes("project")) {
       return "One of Arnab's notable projects is Builders Hut - a CLI tool that scaffolds production-ready FastAPI projects in seconds. He's always working on something new!";
     }
-    if (lowerQuery.includes("contact") || lowerQuery.includes("hire") || lowerQuery.includes("reach")) {
+    if (
+      lowerQuery.includes("contact") ||
+      lowerQuery.includes("hire") ||
+      lowerQuery.includes("reach")
+    ) {
       return "You can reach out to Arnab through the Contact section on this page. He's always open to discussing exciting opportunities and collaborations! 📬";
     }
-    if (lowerQuery.includes("hello") || lowerQuery.includes("hi") || lowerQuery.includes("hey")) {
+    if (
+      lowerQuery.includes("hello") ||
+      lowerQuery.includes("hi") ||
+      lowerQuery.includes("hey")
+    ) {
       return "Hello! Great to meet you! 😊 What would you like to know about Arnab?";
     }
-    
+
     return "That's a great question! Once the AI backend is connected, I'll be able to give you a detailed answer about Arnab. For now, feel free to explore the website or ask about his skills, experience, or projects!";
   };
 
@@ -141,14 +148,16 @@ export default function Playground() {
                   <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border-2 border-background"></div>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-sm">Arnab's AI Assistant</h3>
+                  <h3 className="font-semibold text-sm">
+                    Arnab's AI Assistant
+                  </h3>
                   <p className="text-xs text-muted-foreground flex items-center gap-1">
                     <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
                     Online • Ready to chat
                   </p>
                 </div>
               </div>
-              
+
               {/* Session ID Badge */}
               <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-muted/50 rounded-lg">
                 <Fingerprint size={14} className="text-muted-foreground" />
@@ -305,4 +314,3 @@ export default function Playground() {
     </section>
   );
 }
-
